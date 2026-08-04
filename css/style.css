@@ -178,9 +178,24 @@ h2 { font-size: clamp(32px, 4vw, 50px); font-weight: 600; line-height: 1.25; }
 .check-list li { padding: 10px 0; font-size: 15px; display: flex; align-items: center; gap: 14px; }
 .support-img img { width: 100%; border-radius: 12px; }
 
-/* ---------- Testimonials ---------- */
-.testimonials { padding: 100px 0 90px; }
-.wally-embed { margin-top: 46px; width: 100%; position: relative; }
+/* ---------- Testimonials (native Google-reviews marquee) ---------- */
+.testimonials { padding: 100px 0 90px; overflow: hidden; }
+.reviews-marquee { margin-top: 46px; display: flex; flex-direction: column; gap: 20px; }
+.reviews-row { overflow: hidden; }
+.reviews-track { display: flex; gap: 20px; width: max-content; animation: marquee 60s linear infinite; }
+.row-b .reviews-track { animation-direction: reverse; }
+.reviews-row:hover .reviews-track { animation-play-state: paused; }
+@keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.review-card { width: 340px; flex-shrink: 0; background: var(--white); border: 1px solid #EBEBEB; border-radius: 10px; padding: 18px 20px; display: flex; flex-direction: column; }
+.review-head { display: flex; align-items: center; gap: 10px; }
+.review-head img { width: 34px; height: 34px; border-radius: 50%; object-fit: cover; }
+.review-name { font-size: 14px; font-weight: 500; color: #222; flex: 1; }
+.review-stars { display: flex; gap: 3px; margin: 10px 0 8px; }
+.review-text { font-size: 14px; color: var(--text); line-height: 1.5; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
+.review-foot { display: flex; justify-content: space-between; align-items: center; margin-top: auto; padding-top: 14px; font-size: 12.5px; color: var(--gray-label); }
+.review-foot a { color: var(--text-mid); text-decoration: underline; }
+.review-foot a:hover { color: var(--blue); }
+@media (prefers-reduced-motion: reduce) { .reviews-track { animation: none; } }
 
 /* ---------- Coverage ---------- */
 .coverage { padding: 100px 0; }
