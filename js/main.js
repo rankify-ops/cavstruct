@@ -45,8 +45,7 @@ mainNav.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => {
 }));
 
 // ---------- Quote forms (Web3Forms) ----------
-// TODO: replace with the real Web3Forms access key once created.
-const WEB3FORMS_KEY = 'YOUR_WEB3FORMS_ACCESS_KEY';
+const WEB3FORMS_KEY = '9bb2bba2-0733-48ac-af91-88b7e3a45543';
 
 document.querySelectorAll('[data-form]').forEach((form) => {
   form.addEventListener('submit', async (e) => {
