@@ -77,14 +77,17 @@ document.querySelectorAll('[data-form]').forEach((form) => {
 });
 
 // ---------- Wally reviews embed ----------
+// Official embed: the div carries data-wally-widget="<id>"; embed.js creates the
+// iframe and keeps its height synced to the widget content (same as the original site).
 (() => {
-  const target = document.querySelector('[data-wally-id]');
-  if (!target) return;
-  const id = target.dataset.wallyId;
-  target.innerHTML = '<iframe src="https://widget.getwally.net/' + id + '?v=2" style="border:0;width:100%;min-height:150px;" loading="lazy" title="Customer reviews"></iframe>';
+  if (!document.querySelector('[data-wally-widget]')) return;
   const css = document.createElement('link');
   css.rel = 'stylesheet';
   css.href = 'https://embed.getwally.net/embed.css';
   document.head.appendChild(css);
+  const s = document.createElement('script');
+  s.src = 'https://embed.getwally.net/embed.js';
+  s.async = true;
+  document.body.appendChild(s);
 })();
 
