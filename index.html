@@ -13,6 +13,20 @@
 </head>
 <body>
 
+  <!-- Icon sprite (phosphor-style line icons) -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+    <symbol id="i-phone" viewBox="0 0 256 256"><path fill="currentColor" d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46Z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M4.5 12.5l5 5L19.5 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-circle-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M7.8 12.4l2.7 2.7 5.7-5.7" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-circle-x" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M9 9l6 6M15 9l-6 6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+    <symbol id="i-house" viewBox="0 0 24 24"><path d="M4 11.5L12 4l8 7.5V20a.8.8 0 01-.8.8h-4.7v-5.6h-5v5.6H4.8A.8.8 0 014 20z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-building" viewBox="0 0 24 24"><rect x="5" y="3.5" width="14" height="17" rx="1" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M9 7.5h2M13 7.5h2M9 11.5h2M13 11.5h2M9 15.5h2M13 15.5h2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="i-hammer" viewBox="0 0 24 24"><path d="M14.5 3.5l6 6-2 2-1.5-1.5L8 19a1.8 1.8 0 01-2.5-2.5l9-9L13 6z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l7 2.8v6.2c0 4.1-3 6.6-7 8.2-4-1.6-7-4.1-7-8.2V5.8z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+    <symbol id="i-shield-check" viewBox="0 0 24 24"><path d="M12 3l7 2.8v6.2c0 4.1-3 6.6-7 8.2-4-1.6-7-4.1-7-8.2V5.8z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 11.8l2.2 2.2 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21.5S5 15 5 10a7 7 0 0114 0c0 5-7 11.5-7 11.5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.6" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+  </svg>
+
   <!-- ============ HERO (transparent header overlaid) ============ -->
   <section class="hero" id="top">
     <div class="hero-bg"><img src="assets/images/hero.webp" alt=""></div>
@@ -34,17 +48,17 @@
     <div class="container hero-inner">
       <div class="hero-copy">
         <h1>Carpenter Gold Coast</h1>
-        <p class="hero-sub">Reliable, high-quality carpenter. Same-day quotes available.<br>👉 Book before 4pm today for next-day site inspection.</p>
+        <p class="hero-sub">Reliable, high-quality carpenter. Same-day quotes available. 👉 Book before 4pm today for next-day site inspection.</p>
         <div class="hero-location">
-          <svg viewBox="0 0 256 256" width="36" height="36" fill="currentColor" aria-hidden="true"><path d="M128,16a88.1,88.1,0,0,0-88,88c0,75.3,80,132.17,83.41,134.55a8,8,0,0,0,9.18,0C136,236.17,216,179.3,216,104A88.1,88.1,0,0,0,128,16Zm0,56a32,32,0,1,1-32,32A32,32,0,0,1,128,72Z"/></svg>
+          <svg width="22" height="22"><use href="#i-pin"/></svg>
           <span>GOLD COAST &amp; NORTHERN NSW</span>
         </div>
         <div class="hero-contact">
           <a href="tel:0432073632" class="phone-pill">
-            <svg viewBox="0 0 256 256" width="30" height="30" fill="currentColor" aria-hidden="true"><path d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46Z"/></svg>
+            <span class="pill-icon"><svg width="18" height="18"><use href="#i-phone"/></svg></span>
             <span>0432 073 632</span>
           </a>
-          <span class="hero-avail">Available 7 Days</span>
+          <span class="hero-avail"><svg width="16" height="16"><use href="#i-check"/></svg> Available 7 Days</span>
         </div>
       </div>
 
@@ -52,11 +66,11 @@
         <h3>Free 1 Hour On-Site Quote</h3>
         <p class="quote-note">A skilled carpenter visits your site, assesses the job and answers your questions. No obligation.</p>
         <form class="quote-form" data-form>
-          <div class="field"><label>Name</label><input type="text" name="name" required></div>
-          <div class="field"><label>Email</label><input type="email" name="email" required></div>
-          <div class="field"><label>Phone number</label><input type="tel" name="phone" required></div>
-          <div class="field"><label>Suburb</label><input type="text" name="suburb" required></div>
-          <div class="field"><label>Brief Job Description</label><textarea name="description" rows="3" required></textarea></div>
+          <div class="field"><label>Name</label><input type="text" name="name" placeholder="Jane Smith" required></div>
+          <div class="field"><label>Email</label><input type="email" name="email" placeholder="jane@email.com" required></div>
+          <div class="field"><label>Phone number</label><input type="tel" name="phone" placeholder="0400 000 000" required></div>
+          <div class="field"><label>Suburb</label><input type="text" name="suburb" placeholder="Suburb & Postcode" required></div>
+          <div class="field"><label>Brief Job Description</label><textarea name="description" placeholder="Please explain briefly what you need us for" rows="3" required></textarea></div>
           <button type="submit" class="btn-submit">Submit</button>
           <p class="form-msg" data-form-msg></p>
         </form>
@@ -69,9 +83,9 @@
     <div class="container ratings-inner">
       <p class="ratings-statement reveal">Transparent pricing — no hidden costs</p>
       <div class="ratings-items">
-        <div class="rating-item reveal"><div class="lottie-icon lg" data-lottie="assets/lottie/highly-rated.json"></div><p>Highly Rated Carpenter</p></div>
-        <div class="rating-item reveal delay-1"><div class="lottie-icon lg" data-lottie="assets/lottie/reliable.json"></div><p>Reliable &amp; Organised</p></div>
-        <div class="rating-item reveal delay-2"><div class="lottie-icon lg" data-lottie="assets/lottie/transparent-pricing.json"></div><p>Free On-Site Quote</p></div>
+        <div class="rating-item reveal"><div class="lottie-icon lg" data-lottie="assets/lottie/highly-rated-white.json"></div><p>Highly Rated Carpenter</p></div>
+        <div class="rating-item reveal delay-1"><div class="lottie-icon lg" data-lottie="assets/lottie/reliable-white.json"></div><p>Reliable &amp; Organised</p></div>
+        <div class="rating-item reveal delay-2"><div class="lottie-icon lg" data-lottie="assets/lottie/transparent-pricing-white.json"></div><p>Free On-Site Quote</p></div>
       </div>
     </div>
   </section>
@@ -84,22 +98,31 @@
         <article class="solution-card reveal">
           <img src="assets/images/solution-residential.webp" alt="Residential carpentry">
           <div class="solution-overlay">
-            <h3>Residential Carpentry</h3>
-            <p>Custom solutions for homeowners – whether it's a renovation, a new extension, or outdoor living.</p>
+            <svg class="sol-icon" width="30" height="30"><use href="#i-house"/></svg>
+            <div class="sol-text">
+              <h3>Residential Carpentry</h3>
+              <p>Custom solutions for homeowners – whether it's a renovation, a new extension, or outdoor living.</p>
+            </div>
           </div>
         </article>
         <article class="solution-card reveal delay-1">
           <img src="assets/images/solution-commercial.webp" alt="Commercial projects">
           <div class="solution-overlay">
-            <h3>Commercial Projects</h3>
-            <p>Framing, fit-outs, and finishes delivered with precision to keep your office, retail, or workspace running smoothly.</p>
+            <svg class="sol-icon" width="30" height="30"><use href="#i-building"/></svg>
+            <div class="sol-text">
+              <h3>Commercial Projects</h3>
+              <p>Framing, fit-outs, and finishes delivered with precision to keep your office, retail, or workspace running smoothly.</p>
+            </div>
           </div>
         </article>
         <article class="solution-card reveal delay-2">
           <img src="assets/images/solution-outdoor.webp" alt="Outdoor living and structures">
           <div class="solution-overlay">
-            <h3>Outdoor Living &amp; Structures</h3>
-            <p>Decking, pergolas, and cladding built with quality materials to enhance lifestyle, value, and street appeal.</p>
+            <svg class="sol-icon" width="30" height="30"><use href="#i-hammer"/></svg>
+            <div class="sol-text">
+              <h3>Outdoor Living &amp; Structures</h3>
+              <p>Decking, pergolas, and cladding built with quality materials to enhance lifestyle, value, and street appeal.</p>
+            </div>
           </div>
         </article>
       </div>
@@ -130,7 +153,7 @@
         <div class="phone-strip-overlay">
           <p>We remain available 7 days a week by phone</p>
           <a href="tel:0432073632" class="phone-pill">
-            <svg viewBox="0 0 256 256" width="24" height="24" fill="currentColor" aria-hidden="true"><path d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46Z"/></svg>
+            <span class="pill-icon"><svg width="16" height="16"><use href="#i-phone"/></svg></span>
             <span>0432 073 632</span>
           </a>
         </div>
@@ -144,9 +167,9 @@
       <h2 class="reveal">Ready to start your next building project?</h2>
       <p class="ready-sub reveal">Get your free quote today and work with a trusted local carpenter serving Gold Coast and Northern NSW.</p>
       <ul class="ready-ticks reveal">
-        <li>✓ Free Quotes</li>
-        <li>✓ Fully Insured &amp; Reliable</li>
-        <li>✓ Highly Rated by Locals</li>
+        <li><svg width="19" height="19"><use href="#i-circle-check"/></svg> Free Quotes</li>
+        <li><svg width="19" height="19"><use href="#i-circle-check"/></svg> Fully Insured &amp; Reliable</li>
+        <li><svg width="19" height="19"><use href="#i-circle-check"/></svg> Highly Rated by Locals</li>
       </ul>
       <div class="ready-buttons reveal">
         <a href="#quote" class="btn-white">Book Your Free Quote Now</a>
@@ -170,8 +193,14 @@
         <h2>Proud to build for our community</h2>
         <p class="team-desc">From framing and lock-up to decking, pergolas, cladding, and renovations, our carpenters deliver quality work that adds value and comfort to your property.</p>
         <div class="team-badges">
-          <div class="badge-item"><strong>High Quality</strong><span>For Every Project</span></div>
-          <div class="badge-item"><strong>Fully Insured</strong><span>For Peace of Mind</span></div>
+          <div class="badge-item">
+            <span class="badge-icon"><svg width="24" height="24"><use href="#i-shield"/></svg></span>
+            <div><strong>High Quality</strong><span>For Every Project</span></div>
+          </div>
+          <div class="badge-item">
+            <span class="badge-icon"><svg width="24" height="24"><use href="#i-shield-check"/></svg></span>
+            <div><strong>Fully Insured</strong><span>For Peace of Mind</span></div>
+          </div>
         </div>
       </div>
     </div>
@@ -185,33 +214,38 @@
       <p class="section-sub reveal">Across Gold Coast and Northern NSW, we provide homeowners and businesses with builders they can trust and workmanship they can rely on. Here's what we promise you:</p>
       <div class="compare-grid">
         <div class="compare-col compare-us reveal">
+          <div class="compare-head-icon lottie-icon" data-lottie="assets/lottie/check.json"></div>
           <h3>With Cavstruct Projects</h3>
           <ul>
-            <li><span class="tick" data-lottie="assets/lottie/check.json"></span>Clear, written quotes before work begins — no surprises</li>
-            <li><span class="tick" data-lottie="assets/lottie/check.json"></span>On time arrivals and tidy work at every visit</li>
-            <li><span class="tick" data-lottie="assets/lottie/check.json"></span>Fully insured for your peace of mind</li>
-            <li><span class="tick" data-lottie="assets/lottie/check.json"></span>Free on-site quotes — no call-out fees</li>
-            <li><span class="tick" data-lottie="assets/lottie/check.json"></span>Flexible scheduling for urgent jobs</li>
-            <li><span class="tick" data-lottie="assets/lottie/check.json"></span>Friendly builders who respect your home and property</li>
-            <li><span class="tick" data-lottie="assets/lottie/check.json"></span>Locally trusted for residential and commercial carpentry</li>
+            <li><svg width="20" height="20" class="li-check"><use href="#i-circle-check"/></svg>Clear, written quotes before work begins — no surprises</li>
+            <li><svg width="20" height="20" class="li-check"><use href="#i-circle-check"/></svg>On time arrivals and tidy work at every visit</li>
+            <li><svg width="20" height="20" class="li-check"><use href="#i-circle-check"/></svg>Fully insured for your peace of mind</li>
+            <li><svg width="20" height="20" class="li-check"><use href="#i-circle-check"/></svg>Free on-site quotes — no call-out fees</li>
+            <li><svg width="20" height="20" class="li-check"><use href="#i-circle-check"/></svg>Flexible scheduling for urgent jobs</li>
+            <li><svg width="20" height="20" class="li-check"><use href="#i-circle-check"/></svg>Friendly builders who respect your home and property</li>
+            <li><svg width="20" height="20" class="li-check"><use href="#i-circle-check"/></svg>Locally trusted for residential and commercial carpentry</li>
           </ul>
         </div>
         <div class="compare-col compare-them reveal delay-1">
+          <div class="compare-head-icon lottie-icon" data-lottie="assets/lottie/cross.json"></div>
           <h3>With other Companies</h3>
           <ul>
-            <li><span class="tick" data-lottie="assets/lottie/cross.json"></span>Mixed reviews or unverified ratings</li>
-            <li><span class="tick" data-lottie="assets/lottie/cross.json"></span>Hidden fees and extra costs after the job</li>
-            <li><span class="tick" data-lottie="assets/lottie/cross.json"></span>Late arrivals and messy work areas</li>
-            <li><span class="tick" data-lottie="assets/lottie/cross.json"></span>Unclear insurance or no coverage</li>
-            <li><span class="tick" data-lottie="assets/lottie/cross.json"></span>Call-out fees even for basic quotes</li>
-            <li><span class="tick" data-lottie="assets/lottie/cross.json"></span>Long wait times when you need help</li>
-            <li><span class="tick" data-lottie="assets/lottie/cross.json"></span>Poor communication or unprofessional behaviour</li>
+            <li><svg width="20" height="20" class="li-x"><use href="#i-circle-x"/></svg>Mixed reviews or unverified ratings</li>
+            <li><svg width="20" height="20" class="li-x"><use href="#i-circle-x"/></svg>Hidden fees and extra costs after the job</li>
+            <li><svg width="20" height="20" class="li-x"><use href="#i-circle-x"/></svg>Late arrivals and messy work areas</li>
+            <li><svg width="20" height="20" class="li-x"><use href="#i-circle-x"/></svg>Unclear insurance or no coverage</li>
+            <li><svg width="20" height="20" class="li-x"><use href="#i-circle-x"/></svg>Call-out fees even for basic quotes</li>
+            <li><svg width="20" height="20" class="li-x"><use href="#i-circle-x"/></svg>Long wait times when you need help</li>
+            <li><svg width="20" height="20" class="li-x"><use href="#i-circle-x"/></svg>Poor communication or unprofessional behaviour</li>
           </ul>
         </div>
       </div>
       <div class="center reveal"><a href="#quote" class="btn-blue">Book Free On-Site Quote</a></div>
     </div>
   </section>
+
+  <!-- ============ DOTTED SEPARATOR ============ -->
+  <div class="dot-separator" aria-hidden="true"></div>
 
   <!-- ============ SUPPORT (text left, image right, tinted) ============ -->
   <section class="support">
@@ -221,12 +255,12 @@
         <h2>Reliable support from start to finish</h2>
         <p class="support-desc">Whether you're planning a renovation, extension, or new outdoor project, we make the process straightforward and stress-free. Our team helps with clear planning, fast quotes, and professional delivery so you always know the next step.</p>
         <ul class="check-list">
-          <li>✓ Clear timelines and communication</li>
-          <li>✓ Free on-site quotes with no hidden fees</li>
-          <li>✓ Quality finishes that stand the test of time</li>
+          <li><svg width="20" height="20" class="li-check"><use href="#i-circle-check"/></svg>Clear timelines and communication</li>
+          <li><svg width="20" height="20" class="li-check"><use href="#i-circle-check"/></svg>Free on-site quotes with no hidden fees</li>
+          <li><svg width="20" height="20" class="li-check"><use href="#i-circle-check"/></svg>Quality finishes that stand the test of time</li>
         </ul>
-        <a href="tel:0432073632" class="phone-pill blue">
-          <svg viewBox="0 0 256 256" width="24" height="24" fill="currentColor" aria-hidden="true"><path d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46Z"/></svg>
+        <a href="tel:0432073632" class="phone-pill">
+          <span class="pill-icon"><svg width="16" height="16"><use href="#i-phone"/></svg></span>
           <span>0432 073 632</span>
         </a>
       </div>
@@ -239,8 +273,8 @@
     <div class="container">
       <p class="eyebrow reveal">YOU'RE IN SAFE HANDS</p>
       <h2 class="center-h2 reveal">See what our customers are saying</h2>
-      <div class="wally-embed reveal" data-wally-id="68f94fd8366cc000144d43d3"></div>
     </div>
+    <div class="wally-embed reveal" data-wally-id="68f94fd8366cc000144d43d3"></div>
   </section>
 
   <!-- ============ COVERAGE ============ -->
@@ -250,7 +284,10 @@
       <h2 class="center-h2 reveal">Proudly serving the people of Gold Coast &amp; Northern NSW.</h2>
       <p class="section-sub reveal">Fast response across Gold Coast, Northern NSW and surrounding regional suburbs.</p>
       <div class="coverage-row">
-        <p class="coverage-area reveal">Gold Coast &amp; Northern NSW</p>
+        <div class="coverage-area reveal">
+          <span class="pin-badge"><svg width="26" height="26"><use href="#i-pin"/></svg></span>
+          <span>Gold Coast &amp; Northern NSW</span>
+        </div>
         <div class="coverage-map reveal delay-1">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3517.912637651863!2d153.4964008!3d-28.1491476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b9101370cfc4119%3A0x4af8e180431525e1!2sCavstruct%20Projects!5e0!3m2!1sen!2sau!4v1759280375619!5m2!1sen!2sau" width="583" height="396" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Cavstruct Projects service area map"></iframe>
         </div>
@@ -286,21 +323,21 @@
         <p class="hero-sub">Reliable, high-quality carpentry with fast turnaround. Same-day quotes available. 👉 Book before 4pm for a next-day site inspection.</p>
         <div class="hero-contact">
           <a href="tel:0432073632" class="phone-pill">
-            <svg viewBox="0 0 256 256" width="30" height="30" fill="currentColor" aria-hidden="true"><path d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46Z"/></svg>
+            <span class="pill-icon"><svg width="18" height="18"><use href="#i-phone"/></svg></span>
             <span>0432 073 632</span>
           </a>
-          <span class="hero-avail">Available 7 Days</span>
+          <span class="hero-avail"><svg width="16" height="16"><use href="#i-check"/></svg> Available 24/7</span>
         </div>
       </div>
       <div class="quote-card">
         <h3>Free 1 Hour On-Site Quote</h3>
         <p class="quote-note">A skilled carpenter visits your site, assesses the job and answers your questions. No obligation.</p>
         <form class="quote-form" data-form>
-          <div class="field"><label>Name</label><input type="text" name="name" required></div>
-          <div class="field"><label>Email</label><input type="email" name="email" required></div>
-          <div class="field"><label>Phone number</label><input type="tel" name="phone" required></div>
-          <div class="field"><label>Suburb</label><input type="text" name="suburb" required></div>
-          <div class="field"><label>Brief Job Description</label><textarea name="description" rows="3" required></textarea></div>
+          <div class="field"><label>Name</label><input type="text" name="name" placeholder="Jane Smith" required></div>
+          <div class="field"><label>Email</label><input type="email" name="email" placeholder="jane@email.com" required></div>
+          <div class="field"><label>Phone number</label><input type="tel" name="phone" placeholder="0400 000 000" required></div>
+          <div class="field"><label>Suburb</label><input type="text" name="suburb" placeholder="Suburb & Postcode" required></div>
+          <div class="field"><label>Brief Job Description</label><textarea name="description" placeholder="Please explain briefly what you need us for" rows="3" required></textarea></div>
           <button type="submit" class="btn-submit">Submit</button>
           <p class="form-msg" data-form-msg></p>
         </form>
@@ -312,7 +349,7 @@
   <footer class="footer-bar">
     <div class="container footer-bar-inner">
       <p>Fast Local Response Time</p>
-      <a href="#quote" class="btn-white">Get started with us</a>
+      <a href="#quote" class="btn-outline">Get started with us</a>
     </div>
   </footer>
 
