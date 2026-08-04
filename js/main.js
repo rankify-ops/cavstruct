@@ -37,8 +37,14 @@ lottieEls.forEach((el) => lottieIO.observe(el));
 // ---------- Mobile nav ----------
 const navToggle = document.getElementById('navToggle');
 const mainNav = document.getElementById('mainNav');
-navToggle.addEventListener('click', () => mainNav.classList.toggle('open'));
-mainNav.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => mainNav.classList.remove('open')));
+navToggle.addEventListener('click', () => {
+  mainNav.classList.toggle('open');
+  navToggle.classList.toggle('active');
+});
+mainNav.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => {
+  mainNav.classList.remove('open');
+  navToggle.classList.remove('active');
+}));
 
 // ---------- Quote forms (Web3Forms) ----------
 // TODO: replace with the real Web3Forms access key once created.
