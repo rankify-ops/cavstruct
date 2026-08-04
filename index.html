@@ -7,159 +7,181 @@
   <meta name="description" content="Reliable, high-quality carpenter serving Gold Coast & Northern NSW. Free 1-hour on-site quotes, fully insured. Framing, decking, pergolas, renovations & more.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Geist:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/png" href="assets/images/logo.png">
 </head>
 <body>
 
-  <!-- ============ HEADER ============ -->
-  <header class="site-header" id="top">
-    <div class="container header-inner">
-      <a href="#top" class="logo-link"><img src="assets/images/logo.png" alt="Cavstruct Projects" class="logo"></a>
-      <nav class="main-nav" id="mainNav">
-        <a href="#solutions">Solutions</a>
-        <a href="#services">Services</a>
-        <a href="#why">Why Cavstruct</a>
-        <a href="#faq">FAQ</a>
-      </nav>
-      <a href="#quote" class="btn btn-primary header-cta">Book Free On-Site Quote</a>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
-    </div>
-  </header>
+  <!-- ============ HERO (transparent header overlaid) ============ -->
+  <section class="hero" id="top">
+    <div class="hero-bg"><img src="assets/images/hero.webp" alt=""></div>
 
-  <!-- ============ HERO ============ -->
-  <section class="hero">
-    <div class="hero-bg"><img src="assets/images/hero.webp" alt="Your trusted partner for carpentry and construction"></div>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#top" class="logo-link"><img src="assets/images/logo.png" alt="Cavstruct Projects" class="logo"></a>
+        <nav class="main-nav" id="mainNav">
+          <a href="#solutions">Solutions</a>
+          <a href="#services">Services</a>
+          <a href="#why">Why Cavstruct</a>
+          <a href="#faq">FAQ</a>
+          <a href="#quote" class="nav-cta">Book Free On-Site Quote</a>
+        </nav>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      </div>
+    </header>
+
     <div class="container hero-inner">
-      <div class="hero-copy reveal">
-        <p class="eyebrow light">GOLD COAST &amp; NORTHERN NSW</p>
-        <h1>Carpenter Gold&nbsp;Coast</h1>
+      <div class="hero-copy">
+        <h1>Carpenter Gold Coast</h1>
         <p class="hero-sub">Reliable, high-quality carpenter. Same-day quotes available.<br>👉 Book before 4pm today for next-day site inspection.</p>
+        <div class="hero-location">
+          <svg viewBox="0 0 256 256" width="36" height="36" fill="currentColor" aria-hidden="true"><path d="M128,16a88.1,88.1,0,0,0-88,88c0,75.3,80,132.17,83.41,134.55a8,8,0,0,0,9.18,0C136,236.17,216,179.3,216,104A88.1,88.1,0,0,0,128,16Zm0,56a32,32,0,1,1-32,32A32,32,0,0,1,128,72Z"/></svg>
+          <span>GOLD COAST &amp; NORTHERN NSW</span>
+        </div>
         <div class="hero-contact">
-          <a href="tel:0432073632" class="btn btn-phone">📞 0432 073 632</a>
+          <a href="tel:0432073632" class="phone-pill">
+            <svg viewBox="0 0 256 256" width="30" height="30" fill="currentColor" aria-hidden="true"><path d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46Z"/></svg>
+            <span>0432 073 632</span>
+          </a>
           <span class="hero-avail">Available 7 Days</span>
         </div>
       </div>
-      <div class="quote-card reveal delay-1" id="quote">
+
+      <div class="quote-card" id="quote">
         <h3>Free 1 Hour On-Site Quote</h3>
-        <p>A skilled carpenter visits your site, assesses the job and answers your questions. No obligation.</p>
+        <p class="quote-note">A skilled carpenter visits your site, assesses the job and answers your questions. No obligation.</p>
         <form class="quote-form" data-form>
-          <input type="text" name="name" placeholder="Name" required>
-          <input type="email" name="email" placeholder="Email" required>
-          <input type="tel" name="phone" placeholder="Phone number" required>
-          <input type="text" name="suburb" placeholder="Suburb" required>
-          <textarea name="description" placeholder="Brief Job Description" rows="3" required></textarea>
-          <button type="submit" class="btn btn-primary btn-block">Submit</button>
+          <div class="field"><label>Name</label><input type="text" name="name" required></div>
+          <div class="field"><label>Email</label><input type="email" name="email" required></div>
+          <div class="field"><label>Phone number</label><input type="tel" name="phone" required></div>
+          <div class="field"><label>Suburb</label><input type="text" name="suburb" required></div>
+          <div class="field"><label>Brief Job Description</label><textarea name="description" rows="3" required></textarea></div>
+          <button type="submit" class="btn-submit">Submit</button>
           <p class="form-msg" data-form-msg></p>
         </form>
       </div>
     </div>
   </section>
 
-  <!-- ============ TRUST STRIP ============ -->
-  <section class="trust-strip">
-    <div class="container trust-grid">
-      <div class="trust-item reveal"><div class="lottie-icon" data-lottie="assets/lottie/transparent-pricing.json"></div><p>Transparent pricing — no hidden costs</p></div>
-      <div class="trust-item reveal delay-1"><div class="lottie-icon" data-lottie="assets/lottie/highly-rated.json"></div><p>Highly Rated Carpenter</p></div>
-      <div class="trust-item reveal delay-2"><div class="lottie-icon" data-lottie="assets/lottie/reliable.json"></div><p>Reliable &amp; Organised</p></div>
-      <div class="trust-item reveal delay-3"><div class="lottie-icon" data-lottie="assets/lottie/check.json"></div><p>Free On-Site Quote</p></div>
+  <!-- ============ RATINGS STRIP (blue) ============ -->
+  <section class="ratings">
+    <div class="container ratings-inner">
+      <p class="ratings-statement reveal">Transparent pricing — no hidden costs</p>
+      <div class="ratings-items">
+        <div class="rating-item reveal"><div class="lottie-icon lg" data-lottie="assets/lottie/highly-rated.json"></div><p>Highly Rated Carpenter</p></div>
+        <div class="rating-item reveal delay-1"><div class="lottie-icon lg" data-lottie="assets/lottie/reliable.json"></div><p>Reliable &amp; Organised</p></div>
+        <div class="rating-item reveal delay-2"><div class="lottie-icon lg" data-lottie="assets/lottie/transparent-pricing.json"></div><p>Free On-Site Quote</p></div>
+      </div>
     </div>
   </section>
 
   <!-- ============ SOLUTIONS ============ -->
-  <section class="solutions section" id="solutions">
+  <section class="solutions" id="solutions">
     <div class="container">
-      <p class="section-intro reveal">We cover a wide range of local carpentry and construction services for homes and businesses.</p>
+      <h2 class="solutions-intro reveal">We cover a wide range of local carpentry and construction services for homes and businesses.</h2>
       <div class="solutions-grid">
         <article class="solution-card reveal">
           <img src="assets/images/solution-residential.webp" alt="Residential carpentry">
-          <h3>Residential Carpentry</h3>
-          <p>Custom solutions for homeowners – whether it's a renovation, a new extension, or outdoor living.</p>
+          <div class="solution-overlay">
+            <h3>Residential Carpentry</h3>
+            <p>Custom solutions for homeowners – whether it's a renovation, a new extension, or outdoor living.</p>
+          </div>
         </article>
         <article class="solution-card reveal delay-1">
           <img src="assets/images/solution-commercial.webp" alt="Commercial projects">
-          <h3>Commercial Projects</h3>
-          <p>Framing, fit-outs, and finishes delivered with precision to keep your office, retail, or workspace running smoothly.</p>
+          <div class="solution-overlay">
+            <h3>Commercial Projects</h3>
+            <p>Framing, fit-outs, and finishes delivered with precision to keep your office, retail, or workspace running smoothly.</p>
+          </div>
         </article>
         <article class="solution-card reveal delay-2">
           <img src="assets/images/solution-outdoor.webp" alt="Outdoor living and structures">
-          <h3>Outdoor Living &amp; Structures</h3>
-          <p>Decking, pergolas, and cladding built with quality materials to enhance lifestyle, value, and street appeal.</p>
+          <div class="solution-overlay">
+            <h3>Outdoor Living &amp; Structures</h3>
+            <p>Decking, pergolas, and cladding built with quality materials to enhance lifestyle, value, and street appeal.</p>
+          </div>
         </article>
       </div>
     </div>
   </section>
 
   <!-- ============ SERVICES ============ -->
-  <section class="services section section-tint" id="services">
+  <section class="services" id="services">
     <div class="container">
       <p class="eyebrow reveal">WHAT WE DO</p>
-      <h2 class="reveal">Carpenter services you can count on.</h2>
+      <h2 class="center-h2 reveal">Carpenter services you can count on.</h2>
       <p class="section-sub reveal">Whether you have a specific project in mind or just need guidance on where to start, our team is here to help.</p>
       <div class="services-grid">
-        <article class="service-card reveal"><div class="lottie-icon" data-lottie="assets/lottie/framing.json"></div><h3>Framing</h3><p>Strong, accurate framing for new builds, renovations, and commercial carpentry.</p></article>
-        <article class="service-card reveal delay-1"><div class="lottie-icon" data-lottie="assets/lottie/lockup.json"></div><h3>Lock-Up &amp; Fix</h3><p>Complete lock-up and fix services to finish your build stage quickly and correctly.</p></article>
-        <article class="service-card reveal delay-2"><div class="lottie-icon" data-lottie="assets/lottie/decking.json"></div><h3>Decking</h3><p>Custom timber and composite decking designed and installed by experienced local carpenters.</p></article>
-        <article class="service-card reveal"><div class="lottie-icon" data-lottie="assets/lottie/pergolas.json"></div><h3>Pergolas</h3><p>Stylish pergolas built to add shade, comfort, and long-lasting value to your home.</p></article>
-        <article class="service-card reveal delay-1"><div class="lottie-icon" data-lottie="assets/lottie/renovations.json"></div><h3>Renovations</h3><p>High-quality renovations for kitchens, bathrooms, and full home updates with clean finishes.</p></article>
-        <article class="service-card reveal delay-2"><div class="lottie-icon" data-lottie="assets/lottie/extensions.json"></div><h3>Extensions</h3><p>Seamless extensions that add extra space to your home while maintaining its design.</p></article>
-        <article class="service-card reveal"><div class="lottie-icon" data-lottie="assets/lottie/cladding.json"></div><h3>Cladding</h3><p>Durable, attractive cladding solutions that improve weather protection and street appeal.</p></article>
-        <article class="service-card reveal delay-1"><div class="lottie-icon" data-lottie="assets/lottie/fitouts.json"></div><h3>Commercial Fit-Outs</h3><p>Practical and professional fit-outs for offices, shops, and other light commercial spaces.</p></article>
-        <article class="service-card reveal delay-2"><div class="lottie-icon" data-lottie="assets/lottie/newbuilds.json"></div><h3>New Builds</h3><p>We support larger new build projects with framing, lock-up, fix, and finishing works.</p></article>
+        <article class="service-item reveal"><div class="lottie-icon lg" data-lottie="assets/lottie/framing.json"></div><div><h3>Framing</h3><p>Strong, accurate framing for new builds, renovations, and commercial carpentry.</p></div></article>
+        <article class="service-item reveal delay-1"><div class="lottie-icon lg" data-lottie="assets/lottie/lockup.json"></div><div><h3>Lock-Up &amp; Fix</h3><p>Complete lock-up and fix services to finish your build stage quickly and correctly.</p></div></article>
+        <article class="service-item reveal delay-2"><div class="lottie-icon lg" data-lottie="assets/lottie/decking.json"></div><div><h3>Decking</h3><p>Custom timber and composite decking designed and installed by experienced local carpenters.</p></div></article>
+        <article class="service-item reveal"><div class="lottie-icon lg" data-lottie="assets/lottie/pergolas.json"></div><div><h3>Pergolas</h3><p>Stylish pergolas built to add shade, comfort, and long-lasting value to your home.</p></div></article>
+        <article class="service-item reveal delay-1"><div class="lottie-icon lg" data-lottie="assets/lottie/renovations.json"></div><div><h3>Renovations</h3><p>High-quality renovations for kitchens, bathrooms, and full home updates with clean finishes.</p></div></article>
+        <article class="service-item reveal delay-2"><div class="lottie-icon lg" data-lottie="assets/lottie/extensions.json"></div><div><h3>Extensions</h3><p>Seamless extensions that add extra space to your home while maintaining its design.</p></div></article>
+        <article class="service-item reveal"><div class="lottie-icon lg" data-lottie="assets/lottie/cladding.json"></div><div><h3>Cladding</h3><p>Durable, attractive cladding solutions that improve weather protection and street appeal.</p></div></article>
+        <article class="service-item reveal delay-1"><div class="lottie-icon lg" data-lottie="assets/lottie/fitouts.json"></div><div><h3>Commercial Fit-Outs</h3><p>Practical and professional fit-outs for offices, shops, and other light commercial spaces.</p></div></article>
+        <article class="service-item reveal delay-2"><div class="lottie-icon lg" data-lottie="assets/lottie/newbuilds.json"></div><div><h3>New Builds</h3><p>We support larger new build projects with framing, lock-up, fix, and finishing works.</p></div></article>
       </div>
-      <div class="services-cta reveal">
-        <a href="#quote" class="btn btn-primary">Book Free On-Site Quote</a>
-        <p class="avail-note">We remain available 7 days a week by phone<br><a href="tel:0432073632" class="phone-link">0432 073 632</a></p>
+      <div class="center reveal"><a href="#quote" class="btn-blue">Book Free On-Site Quote</a></div>
+
+      <div class="phone-strip reveal">
+        <img src="assets/images/banner-kitchen.webp" alt="Kitchen renovation">
+        <div class="phone-strip-overlay">
+          <p>We remain available 7 days a week by phone</p>
+          <a href="tel:0432073632" class="phone-pill">
+            <svg viewBox="0 0 256 256" width="24" height="24" fill="currentColor" aria-hidden="true"><path d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46Z"/></svg>
+            <span>0432 073 632</span>
+          </a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ============ CTA BAND ============ -->
-  <section class="cta-band">
-    <div class="cta-band-bg"><img src="assets/images/banner-kitchen.webp" alt="Kitchen renovation"></div>
-    <div class="container cta-band-inner reveal">
-      <h2>Ready to start your next building project?</h2>
-      <p>Get your free quote today and work with a trusted local carpenter serving Gold Coast and Northern NSW.</p>
-      <ul class="cta-ticks">
+  <!-- ============ READY CTA (blue) ============ -->
+  <section class="ready">
+    <div class="container">
+      <h2 class="reveal">Ready to start your next building project?</h2>
+      <p class="ready-sub reveal">Get your free quote today and work with a trusted local carpenter serving Gold Coast and Northern NSW.</p>
+      <ul class="ready-ticks reveal">
         <li>✓ Free Quotes</li>
         <li>✓ Fully Insured &amp; Reliable</li>
         <li>✓ Highly Rated by Locals</li>
       </ul>
-      <div class="cta-buttons">
-        <a href="#quote" class="btn btn-primary">Book Your Free Quote Now</a>
-        <a href="tel:0432073632" class="btn btn-outline-light">Call 0432 073 632</a>
+      <div class="ready-buttons reveal">
+        <a href="#quote" class="btn-white">Book Your Free Quote Now</a>
+        <a href="tel:0432073632" class="btn-white">Call 0432 073 632</a>
       </div>
     </div>
   </section>
 
-  <!-- ============ LOCAL TEAM ============ -->
-  <section class="team section">
+  <!-- ============ LOCAL TEAM (images left, text right) ============ -->
+  <section class="team">
     <div class="container team-inner">
-      <div class="team-copy reveal">
-        <p class="eyebrow">YOUR LOCAL TEAM</p>
-        <h2>Proud to build for our community</h2>
-        <p>From framing and lock-up to decking, pergolas, cladding, and renovations, our carpenters deliver quality work that adds value and comfort to your property.</p>
-        <div class="team-badges">
-          <div class="badge-item"><strong>High Quality</strong><span>For Every Project</span></div>
-          <div class="badge-item"><strong>Fully Insured</strong><span>For Peace of Mind</span></div>
-        </div>
-      </div>
-      <div class="team-collage reveal delay-1">
+      <div class="team-collage reveal">
         <img src="assets/images/team-1.webp" alt="Carpentry work" class="collage-main">
         <div class="collage-row">
           <img src="assets/images/team-2.webp" alt="Carpentry work">
           <img src="assets/images/team-3.webp" alt="Carpentry work">
         </div>
       </div>
+      <div class="team-copy reveal delay-1">
+        <p class="eyebrow left">YOUR LOCAL TEAM</p>
+        <h2>Proud to build for our community</h2>
+        <p class="team-desc">From framing and lock-up to decking, pergolas, cladding, and renovations, our carpenters deliver quality work that adds value and comfort to your property.</p>
+        <div class="team-badges">
+          <div class="badge-item"><strong>High Quality</strong><span>For Every Project</span></div>
+          <div class="badge-item"><strong>Fully Insured</strong><span>For Peace of Mind</span></div>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- ============ COMPARISON ============ -->
-  <section class="comparison section section-tint" id="why">
+  <section class="comparison" id="why">
     <div class="container">
       <p class="eyebrow reveal">UNMATCHED CARE AND COMMITMENT</p>
-      <h2 class="reveal">Why Cavstruct Projects is the Smart Choice</h2>
+      <h2 class="center-h2 reveal">Why Cavstruct Projects is the Smart Choice</h2>
       <p class="section-sub reveal">Across Gold Coast and Northern NSW, we provide homeowners and businesses with builders they can trust and workmanship they can rely on. Here's what we promise you:</p>
       <div class="compare-grid">
         <div class="compare-col compare-us reveal">
@@ -187,59 +209,63 @@
           </ul>
         </div>
       </div>
-      <div class="center reveal"><a href="#quote" class="btn btn-primary">Book Free On-Site Quote</a></div>
+      <div class="center reveal"><a href="#quote" class="btn-blue">Book Free On-Site Quote</a></div>
     </div>
   </section>
 
-  <!-- ============ SUPPORT ============ -->
-  <section class="support section">
+  <!-- ============ SUPPORT (text left, image right, tinted) ============ -->
+  <section class="support">
     <div class="container support-inner">
-      <div class="support-img reveal"><img src="assets/images/support.webp" alt="Reliable building support"></div>
-      <div class="support-copy reveal delay-1">
-        <p class="eyebrow">BUILDING MADE SIMPLE</p>
+      <div class="support-copy reveal">
+        <p class="eyebrow left">BUILDING MADE SIMPLE</p>
         <h2>Reliable support from start to finish</h2>
-        <p>Whether you're planning a renovation, extension, or new outdoor project, we make the process straightforward and stress-free. Our team helps with clear planning, fast quotes, and professional delivery so you always know the next step.</p>
+        <p class="support-desc">Whether you're planning a renovation, extension, or new outdoor project, we make the process straightforward and stress-free. Our team helps with clear planning, fast quotes, and professional delivery so you always know the next step.</p>
         <ul class="check-list">
           <li>✓ Clear timelines and communication</li>
           <li>✓ Free on-site quotes with no hidden fees</li>
           <li>✓ Quality finishes that stand the test of time</li>
         </ul>
-        <a href="tel:0432073632" class="btn btn-phone-dark">📞 0432 073 632</a>
+        <a href="tel:0432073632" class="phone-pill blue">
+          <svg viewBox="0 0 256 256" width="24" height="24" fill="currentColor" aria-hidden="true"><path d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46Z"/></svg>
+          <span>0432 073 632</span>
+        </a>
       </div>
+      <div class="support-img reveal delay-1"><img src="assets/images/support.webp" alt="Reliable building support"></div>
     </div>
   </section>
 
   <!-- ============ TESTIMONIALS ============ -->
-  <section class="testimonials section section-tint">
+  <section class="testimonials">
     <div class="container">
       <p class="eyebrow reveal">YOU'RE IN SAFE HANDS</p>
-      <h2 class="reveal">See what our customers are saying</h2>
+      <h2 class="center-h2 reveal">See what our customers are saying</h2>
       <div class="wally-embed reveal" data-wally-id="68f94fd8366cc000144d43d3"></div>
     </div>
   </section>
 
   <!-- ============ COVERAGE ============ -->
-  <section class="coverage section">
-    <div class="container coverage-inner">
-      <div class="coverage-copy reveal">
-        <p class="eyebrow">LOCAL COVERAGE</p>
-        <h2>Proudly serving the people of Gold Coast &amp; Northern NSW.</h2>
-        <p>Fast response across Gold Coast, Northern NSW and surrounding regional suburbs.</p>
-        <p class="coverage-area">📍 Gold Coast &amp; Northern NSW</p>
-      </div>
-      <div class="coverage-map reveal delay-1">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3517.912637651863!2d153.4964008!3d-28.1491476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b9101370cfc4119%3A0x4af8e180431525e1!2sCavstruct%20Projects!5e0!3m2!1sen!2sau!4v1759280375619!5m2!1sen!2sau" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Cavstruct Projects service area map"></iframe>
+  <section class="coverage">
+    <div class="container">
+      <p class="eyebrow reveal">LOCAL COVERAGE</p>
+      <h2 class="center-h2 reveal">Proudly serving the people of Gold Coast &amp; Northern NSW.</h2>
+      <p class="section-sub reveal">Fast response across Gold Coast, Northern NSW and surrounding regional suburbs.</p>
+      <div class="coverage-row">
+        <p class="coverage-area reveal">Gold Coast &amp; Northern NSW</p>
+        <div class="coverage-map reveal delay-1">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3517.912637651863!2d153.4964008!3d-28.1491476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b9101370cfc4119%3A0x4af8e180431525e1!2sCavstruct%20Projects!5e0!3m2!1sen!2sau!4v1759280375619!5m2!1sen!2sau" width="583" height="396" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Cavstruct Projects service area map"></iframe>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ============ FAQ ============ -->
-  <section class="faq section section-tint" id="faq">
-    <div class="container faq-inner">
-      <div class="faq-copy reveal">
-        <h2>Frequently Asked Questions</h2>
-        <p class="section-sub">See what locals say about our carpentry and construction services.</p>
-        <div class="accordion">
+  <!-- ============ FAQ (image left, questions right, tinted) ============ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <h2 class="faq-h2 reveal">Frequently Asked Questions</h2>
+      <p class="section-sub reveal">See what locals say about our carpentry and construction services.</p>
+      <div class="faq-row">
+        <div class="faq-img reveal"><img src="assets/images/faq.webp" alt="Cavstruct Projects carpentry"></div>
+        <div class="accordion reveal delay-1">
           <details class="acc-item"><summary>What types of carpentry and construction projects do you take on?</summary><p>We handle a wide range of projects including framing, lock-up and fix, decking, pergolas, renovations, extensions, cladding, and light commercial fit-outs. We work with both homeowners and businesses to deliver reliable results tailored to your needs.</p></details>
           <details class="acc-item"><summary>Do you offer a free on-site quote?</summary><p>Yes. We offer free, no-obligation on-site quotes. Our team will assess your project, answer your questions, and provide a clear written estimate with no hidden costs.</p></details>
           <details class="acc-item"><summary>Are you insured?</summary><p>Absolutely. Cavstruct Projects is fully insured, giving you peace of mind that every job is covered and carried out to a high standard of safety and professionalism.</p></details>
@@ -248,38 +274,45 @@
           <details class="acc-item"><summary>Do you take on full new build projects?</summary><p>We don't handle full new home builds directly, but we regularly support builders and homeowners with key stages such as framing, lock-up, fix, cladding, and finishing work. If you're planning a new build, we can work alongside your licensed builder to deliver these essential parts of the project with quality and care.</p></details>
         </div>
       </div>
-      <div class="faq-img reveal delay-1"><img src="assets/images/faq.webp" alt="Cavstruct Projects carpentry"></div>
     </div>
   </section>
 
-  <!-- ============ FOOTER / FINAL CTA ============ -->
-  <footer class="footer">
-    <div class="footer-bg"><img src="assets/images/hero.webp" alt=""></div>
-    <div class="container footer-inner">
-      <div class="footer-copy reveal">
-        <h2>Gold Coast Carpentry</h2>
-        <p>Reliable, high-quality carpentry with fast turnaround. Same-day quotes available. 👉 Book before 4pm for a next-day site inspection.</p>
-        <a href="tel:0432073632" class="btn btn-phone">📞 0432 073 632</a>
-        <span class="hero-avail">Available 7 Days</span>
-        <p class="footer-note">Fast Local Response Time — Get started with us</p>
+  <!-- ============ FOOTER HERO ============ -->
+  <section class="hero footer-hero">
+    <div class="hero-bg"><img src="assets/images/hero.webp" alt=""></div>
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <h1>Gold Coast Carpentry</h1>
+        <p class="hero-sub">Reliable, high-quality carpentry with fast turnaround. Same-day quotes available. 👉 Book before 4pm for a next-day site inspection.</p>
+        <div class="hero-contact">
+          <a href="tel:0432073632" class="phone-pill">
+            <svg viewBox="0 0 256 256" width="30" height="30" fill="currentColor" aria-hidden="true"><path d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46Z"/></svg>
+            <span>0432 073 632</span>
+          </a>
+          <span class="hero-avail">Available 7 Days</span>
+        </div>
       </div>
-      <div class="quote-card reveal delay-1">
+      <div class="quote-card">
         <h3>Free 1 Hour On-Site Quote</h3>
-        <p>A skilled carpenter visits your site, assesses the job and answers your questions. No obligation.</p>
+        <p class="quote-note">A skilled carpenter visits your site, assesses the job and answers your questions. No obligation.</p>
         <form class="quote-form" data-form>
-          <input type="text" name="name" placeholder="Name" required>
-          <input type="email" name="email" placeholder="Email" required>
-          <input type="tel" name="phone" placeholder="Phone number" required>
-          <input type="text" name="suburb" placeholder="Suburb" required>
-          <textarea name="description" placeholder="Brief Job Description" rows="3" required></textarea>
-          <button type="submit" class="btn btn-primary btn-block">Submit</button>
+          <div class="field"><label>Name</label><input type="text" name="name" required></div>
+          <div class="field"><label>Email</label><input type="email" name="email" required></div>
+          <div class="field"><label>Phone number</label><input type="tel" name="phone" required></div>
+          <div class="field"><label>Suburb</label><input type="text" name="suburb" required></div>
+          <div class="field"><label>Brief Job Description</label><textarea name="description" rows="3" required></textarea></div>
+          <button type="submit" class="btn-submit">Submit</button>
           <p class="form-msg" data-form-msg></p>
         </form>
       </div>
     </div>
-    <div class="container footer-base">
-      <img src="assets/images/logo.png" alt="Cavstruct Projects" class="footer-logo">
-      <p>© <span id="year"></span> Cavstruct Projects. Serving Gold Coast &amp; Northern NSW.</p>
+  </section>
+
+  <!-- ============ FOOTER BAR (blue) ============ -->
+  <footer class="footer-bar">
+    <div class="container footer-bar-inner">
+      <p>Fast Local Response Time</p>
+      <a href="#quote" class="btn-white">Get started with us</a>
     </div>
   </footer>
 

@@ -28,7 +28,7 @@ const lottieIO = new IntersectionObserver((entries) => {
       autoplay: true,
       path: el.dataset.lottie,
     });
-    const card = el.closest('.service-card, .trust-item, li') || el;
+    const card = el.closest('.service-item, .rating-item, li') || el;
     card.addEventListener('mouseenter', () => anim.goToAndPlay(0, true));
   });
 }, { threshold: 0.3 });
@@ -84,5 +84,3 @@ document.querySelectorAll('[data-form]').forEach((form) => {
   document.head.appendChild(css);
 })();
 
-// ---------- Footer year ----------
-document.getElementById('year').textContent = new Date().getFullYear();
