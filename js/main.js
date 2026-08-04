@@ -13,23 +13,21 @@ const io = new IntersectionObserver((entries) => {
 revealEls.forEach((el) => io.observe(el));
 
 // ---------- Lottie icons ----------
-// Each element with [data-lottie] loads its JSON and plays when it scrolls into view,
-// then replays on hover of its parent card.
+// Each element with [data-lottie] loads its JSON when it first scrolls into view
+// and loops continuously, like the original site.
 const lottieEls = document.querySelectorAll('[data-lottie]');
 const lottieIO = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (!entry.isIntersecting) return;
     const el = entry.target;
     lottieIO.unobserve(el);
-    const anim = lottie.loadAnimation({
+    lottie.loadAnimation({
       container: el,
       renderer: 'svg',
-      loop: false,
+      loop: true,
       autoplay: true,
       path: el.dataset.lottie,
     });
-    const card = el.closest('.service-item, .rating-item, li') || el;
-    card.addEventListener('mouseenter', () => anim.goToAndPlay(0, true));
   });
 }, { threshold: 0.3 });
 lottieEls.forEach((el) => lottieIO.observe(el));
