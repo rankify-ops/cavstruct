@@ -63,12 +63,18 @@ h2 { font-size: clamp(32px, 4vw, 50px); font-weight: 600; line-height: 1.25; }
 .hero-bg::after { content: ''; position: absolute; inset: 0; background: rgba(0, 0, 0, 0.7); }
 .hero-inner { display: flex; justify-content: space-between; align-items: center; gap: 40px; }
 .hero-copy { max-width: 715px; }
-.hero-copy h1 { font-size: clamp(40px, 5vw, 60px); font-weight: 600; line-height: 1.2; color: var(--white); margin-bottom: 20px; }
+.hero-copy h1, .hero-copy .hero-title { font-size: clamp(40px, 5vw, 60px); font-weight: 600; line-height: 1.2; color: var(--white); margin-bottom: 20px; }
 .hero-sub { font-size: 20px; color: var(--white); margin-bottom: 48px; max-width: 660px; }
 .hero-location { display: flex; align-items: center; gap: 12px; color: var(--white); font-size: 16px; margin-bottom: 34px; }
 .hero-location svg { flex-shrink: 0; }
 .hero-contact { display: flex; align-items: center; gap: 22px; flex-wrap: nowrap; }
 .hero-avail { display: inline-flex; align-items: center; gap: 8px; color: #DDDDDD; font-size: 16px; white-space: nowrap; }
+
+.license-badge { display: inline-flex; align-items: center; gap: 12px; background: rgba(255,255,255,0.12); border: 1px solid rgba(212,168,60,0.7); border-radius: 50px; padding: 8px 20px 8px 8px; margin-bottom: 26px; backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); }
+.license-icon { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; background: #D4A83C; color: #1a1400; flex-shrink: 0; }
+.license-text { display: flex; flex-direction: column; line-height: 1.25; }
+.license-text strong { color: var(--white); font-size: 15px; font-weight: 700; letter-spacing: .01em; }
+.license-num { color: #E8D6A8; font-size: 12.5px; font-weight: 500; }
 
 /* ---------- Quote card (frosted) ---------- */
 .quote-card { background: rgba(240, 244, 250, 0.9); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); border-radius: 10px; padding: 40px 20px; width: 450px; flex-shrink: 0; }
@@ -265,7 +271,7 @@ h2 { font-size: clamp(32px, 4vw, 50px); font-weight: 600; line-height: 1.25; }
   /* Hero — centered on phone */
   .hero { padding: 150px 0 60px; }
   .hero-copy { text-align: center; max-width: none; }
-  .hero-copy h1 { font-size: 36px; }
+  .hero-copy h1, .hero-copy .hero-title { font-size: 36px; }
   .hero-sub { font-size: 18px; margin-bottom: 40px; }
   .hero-location { justify-content: center; }
   .hero-contact { flex-direction: column; gap: 16px; }

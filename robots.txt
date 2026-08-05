@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cavstructprojects.com.au/sitemap.xml
